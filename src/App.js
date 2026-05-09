@@ -31,6 +31,14 @@ function App() {
           <h1>Todo List React</h1>
         </header>
 
+        <input
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          placeholder="Add a new task..."
+        />
+
+        <p>You are typing: {text}`</p>
+
         <ul>
           {task.map((task) => (
             <li key={task.id}>
