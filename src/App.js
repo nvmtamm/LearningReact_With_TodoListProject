@@ -13,6 +13,9 @@ function App() {
     { id: 3, title: "Master React Hooks", completed: false },
   ]);
 
+  //
+  const [text, setText] = useState("");
+
   const toggleComplete = (id) => {
     setTask((prevTask) =>
       prevTask.map((task) =>
