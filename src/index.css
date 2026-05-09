@@ -41,8 +41,7 @@ button {
   padding: 32px 16px;
   background:
     linear-gradient(135deg, rgba(37, 99, 235, 0.08), transparent 34%),
-    linear-gradient(315deg, rgba(15, 159, 110, 0.12), transparent 38%),
-    #eef3f8;
+    linear-gradient(315deg, rgba(15, 159, 110, 0.12), transparent 38%), #eef3f8;
 }
 
 .app {
