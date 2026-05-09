@@ -13,6 +13,14 @@ function App() {
     { id: 3, title: "Master React Hooks", completed: false },
   ]);
 
+  const toggleComplete = (id) => {
+    setTask((prevTask) =>
+      prevTask.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task,
+      ),
+    );
+  };
+
   return (
     <main className="app">
       <div className="app">
@@ -23,7 +31,11 @@ function App() {
         <ul>
           {task.map((task) => (
             <li key={task.id}>
-              <input type="checkbox" checked={task.completed} readOnly />
+              <input
+                type="checkbox"
+                checked={task.completed}
+                onChange={() => toggleComplete(task.id)}
+              />
 
               <span>{task.title}</span>
             </li>
