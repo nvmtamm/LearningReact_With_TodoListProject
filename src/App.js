@@ -3,7 +3,8 @@ import { useState } from "react";
 // import "./App.css";
 function App() {
   // note: - task is the state variable,
-  //       - setTask is the function to update the state variable, and useState([]) initializes the state variable with an empty array.
+  //       - setTask is the function to update the state variable: add(), remove(), toggleComplete()...
+  //       - useState([]) initializes the state variable with an empty array.
   const [task, setTask] = useState([
     { id: 1, title: "Learn React", completed: false },
 
@@ -18,6 +19,16 @@ function App() {
         <header className="app-header">
           <h1>Todo List React</h1>
         </header>
+
+        <ul>
+          {task.map((task) => (
+            <li key={task.id}>
+              <input type="checkbox" checked={task.completed} readOnly />
+
+              <span>{task.title}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </main>
   );
