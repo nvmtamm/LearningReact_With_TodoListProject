@@ -32,12 +32,13 @@ function App() {
         </header>
 
         <input
+          className="input-box"
           value={text}
           onChange={(e) => setText(e.target.value)}
           placeholder="Add a new task..."
         />
 
-        <p>You are typing: {text}`</p>
+        <p>You are typing: {text}</p>
 
         <ul>
           {task.map((task) => (
