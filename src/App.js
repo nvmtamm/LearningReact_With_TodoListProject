@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <main className="app">
+    <main>
       <div className="app">
         <header className="app-header">
           <h1>Todo List React</h1>

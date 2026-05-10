@@ -33,3 +33,615 @@ webpack compiled [1m[32msuccessfully[39m[22m
 Compiling...
 Compiled successfully!
 webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Failed to compile.
+
+Attempted import error: './App' does not contain a default export (imported as 'App').
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 1:10:  'useState' is defined but never used  no-unused-vars
+
+[39m[22m
+
+[1m[31mERROR[39m[22m in [1m./src/index.js[39m[22m [1m[32m10:33-36[39m[22m
+[1mexport 'default' (imported as 'App') was [1m[31mnot found[39m[22m[1m in './App' [1m[31m(module has no exports)[39m[22m[1m[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m and [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Failed to compile.
+
+[eslint] 
+src\App.js
+Syntax error: Unexpected token, expected "," (16:11) (16:11)
+[1m[31mERROR[39m[22m in [1m./src/App.js[39m[22m
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\IT\Projects\LearningReact_With_TodoListProject\src\App.js: Unexpected token, expected "," (16:11)
+
+[0m [90m 14 |[39m         [33m<[39m[33m/[39m[33mheader[39m[33m>[39m
+ [90m 15 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+[31m[1m>[22m[39m[90m 16 |[39m     [33m<[39m[33m/[39m[33mmain[39m[33m>[39mgu
+ [90m    |[39m            [31m[1m^[22m[39m
+ [90m 17 |[39m   )[33m;[39m
+ [90m 18 |[39m }
+ [90m 19 |[39m [36mexport[39m [36mdefault[39m [33mApp[39m[33m;[39m[0m
+    at constructor (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:365:19)
+    at FlowParserMixin.raise (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6616:19)
+    at FlowParserMixin.unexpected (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6636:16)
+    at FlowParserMixin.expect (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6916:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11678:14)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3603:18)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11348:23)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11098:23)
+    at FlowParserMixin.parseUpdate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10916:61)
+    at FlowParserMixin.parseExprOps (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10848:21)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3561:18)
+    at FlowParserMixin.parseExpressionBase (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10801:23)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10797:39
+    at FlowParserMixin.allowInAnd (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12438:16)
+    at FlowParserMixin.parseExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10797:17)
+    at FlowParserMixin.parseReturnStatement (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13159:28)
+    at FlowParserMixin.parseStatementContent (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12815:21)
+    at FlowParserMixin.parseStatementLike (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12784:17)
+    at FlowParserMixin.parseStatementLike (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:2930:24)
+    at FlowParserMixin.parseStatementListItem (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12764:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13333:61)
+    at FlowParserMixin.parseBlockBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13326:10)
+    at FlowParserMixin.parseBlock (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13314:10)
+    at FlowParserMixin.parseFunctionBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12117:24)
+    at FlowParserMixin.parseFunctionBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:2907:11)
+    at FlowParserMixin.parseFunctionBodyAndFinish (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12103:10)
+    at FlowParserMixin.parseFunctionBodyAndFinish (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:2915:18)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13462:12
+    at FlowParserMixin.withSmartMixTopicForbiddingContext (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12420:14)
+    at FlowParserMixin.parseFunction (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13461:10)
+    at FlowParserMixin.parseFunctionStatement (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13142:17)
+    at FlowParserMixin.parseStatementContent (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12808:21)
+    at FlowParserMixin.parseStatementLike (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12784:17)
+    at FlowParserMixin.parseStatementLike (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:2930:24)
+    at FlowParserMixin.parseModuleItem (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12761:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13333:36)
+    at FlowParserMixin.parseBlockBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13326:10)
+    at FlowParserMixin.parseProgram (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12639:10)
+    at FlowParserMixin.parseTopLevel (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12629:25)
+    at FlowParserMixin.parseTopLevel (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3697:28)
+    at FlowParserMixin.parse (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:14505:25)
+    at parse (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:14539:38)
+    at parser (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\core\lib\parser\index.js:41:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\core\lib\transformation\normalize-file.js:64:37)
+
+[1m[31mERROR[39m[22m in [1m[eslint] 
+src\App.js
+  Line 16:11:  Parsing [1m[31merror[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token, expected "," (16:11)
+
+[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Failed to compile.
+
+[eslint] 
+src\App.js
+  Line 10:52:  'TRUE' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+[1m[31mERROR[39m[22m in [1m[eslint] 
+src\App.js
+  Line 10:52:  'TRUE' is not defined  no-undef
+
+Search for the keywords to learn more about each [1m[31merror[39m[22m[1m.[39m[22m
+
+webpack compiled with [1m[31m1 error[39m[22m and [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 7:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 7:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 8:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 8:10:  'task' is assigned a value but never used     no-unused-vars
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Failed to compile.
+
+[eslint] 
+src\App.js
+Syntax error: Expected corresponding JSX closing tag for <li>. (27:8) (27:8)
+[1m[31mERROR[39m[22m in [1m./src/App.js[39m[22m
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\IT\Projects\LearningReact_With_TodoListProject\src\App.js: Expected corresponding JSX closing tag for <li>. (27:8)
+
+[0m [90m 25 |[39m             [33m<[39m[33mli[39m key[33m=[39m{task[33m.[39mid}[33m>[39m
+ [90m 26 |[39m               {}
+[31m[1m>[22m[39m[90m 27 |[39m         [33m<[39m[33m/[39m[33mul[39m[33m>[39m
+ [90m    |[39m         [31m[1m^[22m[39m
+ [90m 28 |[39m       [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m
+ [90m 29 |[39m     [33m<[39m[33m/[39m[33mmain[39m[33m>[39m
+ [90m 30 |[39m   )[33m;[39m[0m
+    at constructor (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:365:19)
+    at FlowParserMixin.raise (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6616:19)
+    at FlowParserMixin.jsxParseElementAt (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4739:16)
+    at FlowParserMixin.jsxParseElement (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4761:17)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4771:19)
+    at FlowParserMixin.parseExprSubscripts (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11098:23)
+    at FlowParserMixin.parseUpdate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10916:61)
+    at FlowParserMixin.parseExprOps (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10848:21)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3510:39
+    at FlowParserMixin.tryParse (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6924:20)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3510:18)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10817:39
+    at FlowParserMixin.allowInAnd (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12443:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10817:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12510:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11692:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3603:18)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11348:23)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11098:23)
+    at FlowParserMixin.parseUpdate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10916:61)
+    at FlowParserMixin.parseExprOps (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10848:21)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3561:18)
+    at FlowParserMixin.parseFunctionBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12110:24)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:2904:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3080:16)
+    at FlowParserMixin.parseFunctionBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:2904:12)
+    at FlowParserMixin.parseArrowExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12092:10)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11704:12)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3603:18)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11348:23)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11098:23)
+    at FlowParserMixin.parseUpdate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10916:61)
+    at FlowParserMixin.parseExprOps (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10848:21)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3561:18)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10817:39
+    at FlowParserMixin.allowInAnd (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12443:12)
+
+[1m[31mERROR[39m[22m in [1m[eslint] 
+src\App.js
+  Line 27:8:  Parsing [1m[31merror[39m[22m[1m: Expected corresponding JSX closing tag for <li>. (27:8)
+
+[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 8:16:   'setTask' is assigned a value but never used                            no-unused-vars
+  Line 18:28:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  Line 22:18:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 8:16:   'setTask' is assigned a value but never used                            no-unused-vars
+  Line 18:28:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  Line 22:18:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 8:16:   'setTask' is assigned a value but never used                            no-unused-vars
+  Line 18:28:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  Line 22:18:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 8:16:   'setTask' is assigned a value but never used                            no-unused-vars
+  Line 18:28:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+  Line 22:18:  Comments inside children section of tag should be placed inside braces  react/jsx-no-comment-textnodes
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Failed to compile.
+
+[eslint] 
+src\App.js
+Syntax error: Unexpected token (19:9) (19:9)
+[1m[31mERROR[39m[22m in [1m./src/App.js[39m[22m
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: C:\IT\Projects\LearningReact_With_TodoListProject\src\App.js: Unexpected token (19:9)
+
+[0m [90m 17 |[39m     [33m<[39m[33mmain[39m className[33m=[39m[32m"app"[39m[33m>[39m
+ [90m 18 |[39m       [33m<[39m[33mdiv[39m className[33m=[39m[32m"app"[39m[33m>[39m
+[31m[1m>[22m[39m[90m 19 |[39m         [33m<[39m[33m![39m[33m--[39m [33mHeader[39m [36mof[39m the app [33m--[39m[33m>[39m
+ [90m    |[39m          [31m[1m^[22m[39m
+ [90m 20 |[39m         [33m<[39m[33mheader[39m className[33m=[39m[32m"app-header"[39m[33m>[39m
+ [90m 21 |[39m           [33m<[39m[33mh1[39m[33m>[39m[33mTodo[39m [33mList[39m [33mReact[39m[33m<[39m[33m/[39m[33mh1[39m[33m>[39m
+ [90m 22 |[39m         [33m<[39m[33m/[39m[33mheader[39m[33m>[39m[0m
+    at constructor (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:365:19)
+    at FlowParserMixin.raise (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6616:19)
+    at FlowParserMixin.unexpected (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6636:16)
+    at FlowParserMixin.jsxParseIdentifier (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4581:12)
+    at FlowParserMixin.jsxParseNamespacedName (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4588:23)
+    at FlowParserMixin.jsxParseElementName (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4597:21)
+    at FlowParserMixin.jsxParseOpeningElementAt (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4673:22)
+    at FlowParserMixin.jsxParseElementAt (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4698:33)
+    at FlowParserMixin.jsxParseElementAt (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4710:32)
+    at FlowParserMixin.jsxParseElementAt (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4710:32)
+    at FlowParserMixin.jsxParseElement (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4761:17)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4771:19)
+    at FlowParserMixin.parseExprSubscripts (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11098:23)
+    at FlowParserMixin.parseUpdate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10916:61)
+    at FlowParserMixin.parseExprOps (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10848:21)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3510:39
+    at FlowParserMixin.tryParse (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:6924:20)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3510:18)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10817:39
+    at FlowParserMixin.allowInAnd (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12443:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10817:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12510:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11692:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3603:18)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11348:23)
+    at FlowParserMixin.parseExprAtom (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:4776:20)
+    at FlowParserMixin.parseExprSubscripts (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11098:23)
+    at FlowParserMixin.parseUpdate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11083:21)
+    at FlowParserMixin.parseMaybeUnary (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:11063:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10916:61)
+    at FlowParserMixin.parseExprOps (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10921:23)
+    at FlowParserMixin.parseMaybeConditional (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10898:23)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10848:21)
+    at FlowParserMixin.parseMaybeAssign (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:3561:18)
+    at FlowParserMixin.parseExpressionBase (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10801:23)
+    at C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10797:39
+    at FlowParserMixin.allowInAnd (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12438:16)
+    at FlowParserMixin.parseExpression (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:10797:17)
+    at FlowParserMixin.parseReturnStatement (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13159:28)
+    at FlowParserMixin.parseStatementContent (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12815:21)
+    at FlowParserMixin.parseStatementLike (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12784:17)
+    at FlowParserMixin.parseStatementLike (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:2930:24)
+    at FlowParserMixin.parseStatementListItem (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:12764:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13333:61)
+    at FlowParserMixin.parseBlockBody (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13326:10)
+    at FlowParserMixin.parseBlock (C:\IT\Projects\LearningReact_With_TodoListProject\node_modules\@babel\parser\lib\index.js:13314:10)
+
+[1m[31mERROR[39m[22m in [1m[eslint] 
+src\App.js
+  Line 19:9:  Parsing [1m[31merror[39m[22m[1m: [1m[31mUnexpected[39m[22m[1m token (19:9)
+
+[39m[22m
+
+webpack compiled with [1m[31m2 errors[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 8:16:  'setTask' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 16:9:  'toggleComplete' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 16:9:  'toggleComplete' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 17:10:  'text' is assigned a value but never used     no-unused-vars
+  Line 17:16:  'setText' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 17:10:  'text' is assigned a value but never used     no-unused-vars
+  Line 17:16:  'setText' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled with warnings.
+
+[eslint] 
+src\App.js
+  Line 17:10:  'text' is assigned a value but never used     no-unused-vars
+  Line 17:16:  'setText' is assigned a value but never used  no-unused-vars
+
+Search for the keywords to learn more about each warning.
+To ignore, add // eslint-disable-next-line to the line before.
+
+[1m[33mWARNING[39m[22m in [1m[eslint] 
+src\App.js
+  Line 17:10:  'text' is assigned a value but never used     no-unused-vars
+  Line 17:16:  'setText' is assigned a value but never used  no-unused-vars
+
+[39m[22m
+
+webpack compiled with [1m[33m1 warning[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
+Compiling...
+Compiled successfully!
+webpack compiled [1m[32msuccessfully[39m[22m
