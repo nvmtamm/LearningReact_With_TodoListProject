@@ -25,17 +25,21 @@ function App() {
   };
   // 1. method addTask() sẽ tạo một task mới với id tự động tăng, title lấy từ input và completed mặc định là false.
   const addTask = () => {
-  // 1. Kiểm tra input rỗng
-  if (text.trim() === "") return;
+    // 1. Kiểm tra input rỗng
+    if (text.trim() === "") return;
 
+    // 2. Tạo task mới
+    const newTask = {
+      id: Date.now(),
+      title: text,
+      completed: false,
+    };
+    // 3. Thêm task mới vào state task
+    setTask((oldTask) => [...oldTask, newTask]);
 
-  // 2. Tạo task mới
-  const newTask = {
-    id: Date.now(),
-    title: text,
-    completed: false,
+    // 4. Xoá nội dung input sau khi thêm
+    setText("");
   };
-
   return (
     <main>
       <div className="app">
@@ -49,6 +53,9 @@ function App() {
           onChange={(e) => setText(e.target.value)}
           placeholder="Add a new task..."
         />
+        <button className="add-button" onClick={addTask}>
+          Add Task
+        </button>
 
         <p>You are typing: {text}</p>
 
