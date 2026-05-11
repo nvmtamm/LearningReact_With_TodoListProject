@@ -23,10 +23,18 @@ function App() {
       ),
     );
   };
-
+  // 1. method addTask() sẽ tạo một task mới với id tự động tăng, title lấy từ input và completed mặc định là false.
   const addTask = () => {
   // 1. Kiểm tra input rỗng
   if (text.trim() === "") return;
+
+
+  // 2. Tạo task mới
+  const newTask = {
+    id: Date.now(),
+    title: text,
+    completed: false,
+  };
 
   return (
     <main>
