@@ -24,6 +24,10 @@ function App() {
     );
   };
 
+  const addTask = () => {
+  // 1. Kiểm tra input rỗng
+  if (text.trim() === "") return;
+
   return (
     <main>
       <div className="app">
