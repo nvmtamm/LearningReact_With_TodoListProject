@@ -34,11 +34,38 @@
   color: white;
   cursor: pointer;
 }
-ul {
+.todo-summary {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 18px 0 12px;
+  color: #2f3b52;
+  font-size: 0.95rem;
+}
+.filter-group {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.filter-button {
+  padding: 8px 14px;
+  border: 1px solid #b6c3d8;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #043096;
+  cursor: pointer;
+}
+.filter-button.active {
+  border-color: #043096;
+  background-color: #043096;
+  color: #ffffff;
+}
+.task-list {
   padding: 0;
   list-style: none;
 }
-li {
+.task-list li {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -47,8 +74,16 @@ li {
   border-radius: 14px;
   background-color: #ffffff;
 }
-li span {
+.task-title {
   flex: 1;
+}
+.task-title.completed {
+  color: #6f7787;
+  text-decoration: line-through;
+}
+.empty-state {
+  justify-content: center;
+  color: #6f7787;
 }
 .delete-button {
   padding: 8px 12px;

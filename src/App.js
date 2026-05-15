@@ -7,6 +7,22 @@ function App() {
     { id: 3, title: "Master React Hooks", completed: false },
   ]);
   const [text, setText] = useState("");
+  const [filter, setFilter] = useState("all");
+
+  const filterOptions = [
+    { value: "all", label: "All" },
+    { value: "active", label: "Active" },
+    { value: "completed", label: "Completed" },
+  ];
+
+  const activeCount = tasks.filter((task) => !task.completed).length;
+  const completedCount = tasks.length - activeCount;
+  const visibleTasks = tasks.filter((task) => {
+    if (filter === "active") return !task.completed;
+    if (filter === "completed") return task.completed;
+
+    return true;
+  });
 
   const toggleComplete = (id) => {
     setTasks((prevTasks) =>
@@ -56,28 +72,56 @@ function App() {
           </button>
         </form>
 
-        <p>You are typing: {text}</p>
+        <div className="todo-summary" aria-live="polite">
+          <span>{tasks.length} total</span>
+          <span>{activeCount} active</span>
+          <span>{completedCount} completed</span>
+        </div>
 
-        <ul>
-          {tasks.map((task) => (
-            <li key={task.id}>
-              <input
-                type="checkbox"
-                checked={task.completed}
-                onChange={() => toggleComplete(task.id)}
-              />
-
-              <span>{task.title}</span>
-              <button
-                className="delete-button"
-                type="button"
-                onClick={() => deleteTask(task.id)}
-                aria-label={`Delete ${task.title}`}
-              >
-                Delete
-              </button>
-            </li>
+        <div className="filter-group" aria-label="Task filters">
+          {filterOptions.map((option) => (
+            <button
+              className={`filter-button ${
+                filter === option.value ? "active" : ""
+              }`}
+              key={option.value}
+              type="button"
+              onClick={() => setFilter(option.value)}
+              aria-pressed={filter === option.value}
+            >
+              {option.label}
+            </button>
           ))}
+        </div>
+
+        <ul className="task-list">
+          {visibleTasks.length === 0 ? (
+            <li className="empty-state">No tasks in this view.</li>
+          ) : (
+            visibleTasks.map((task) => (
+              <li key={task.id}>
+                <input
+                  type="checkbox"
+                  checked={task.completed}
+                  onChange={() => toggleComplete(task.id)}
+                />
+
+                <span
+                  className={`task-title ${task.completed ? "completed" : ""}`}
+                >
+                  {task.title}
+                </span>
+                <button
+                  className="delete-button"
+                  type="button"
+                  onClick={() => deleteTask(task.id)}
+                  aria-label={`Delete ${task.title}`}
+                >
+                  Delete
+                </button>
+              </li>
+            ))
+          )}
         </ul>
       </div>
     </main>
