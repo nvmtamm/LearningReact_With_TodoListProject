@@ -17,8 +17,20 @@
 }
 .input-box {
   width: 40vw;
-  margin-left: 20px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 30px;
+}
+.todo-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.add-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  background-color: #043096;
+  color: white;
+  cursor: pointer;
 }
