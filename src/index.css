@@ -1,7 +1,9 @@
+/* Codex note: Reset box model de padding/border khong lam phan tu bi tran kich thuoc. */
 * {
   box-sizing: border-box;
 }
 
+/* Codex note: Them style nen chung cho trang thay vi chi style rieng card todo. */
 body {
   margin: 0;
   background-color: #f4f7fb;
@@ -11,6 +13,7 @@ body {
     sans-serif;
 }
 
+/* Codex note: Can giua app theo chieu ngang va tao khoang cach tren duoi cho moi man hinh. */
 main {
   display: grid;
   min-height: 100vh;
@@ -18,6 +21,7 @@ main {
   padding: 48px 16px;
 }
 
+/* Codex note: Thay style app cu bang card co max-width de dung tot tren desktop va mobile. */
 .app {
   width: min(720px, 100%);
   padding: 32px;
@@ -27,6 +31,7 @@ main {
   box-shadow: 0 20px 45px rgba(10, 37, 64, 0.14);
 }
 
+/* Codex note: Nhom style heading rieng de tieu de gon va de can chinh hon. */
 .app-header {
   margin-bottom: 24px;
   color: #043096;
@@ -38,12 +43,14 @@ main {
   font-size: 2rem;
 }
 
+/* Codex note: Form dung flex de input va nut Add nam cung hang tren desktop. */
 .todo-form {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
+/* Codex note: Input dung `flex: 1` de tu gian theo chieu rong card. */
 .input-box {
   flex: 1;
   min-width: 0;
@@ -54,11 +61,13 @@ main {
   font-size: 1rem;
 }
 
+/* Codex note: Focus state giup thay ro dang nhap o input nao khi dung ban phim. */
 .input-box:focus {
   border-color: #043096;
   outline: 3px solid rgba(4, 48, 150, 0.15);
 }
 
+/* Codex note: Gom transition cho cac nut de hover/focus muot va nhat quan. */
 .add-button,
 .delete-button,
 .filter-button {
@@ -68,12 +77,14 @@ main {
     transform 160ms ease;
 }
 
+/* Codex note: Hover day nut len nhe, tao cam giac co the click. */
 .add-button:hover,
 .delete-button:hover,
 .filter-button:hover {
   transform: translateY(-1px);
 }
 
+/* Codex note: `focus-visible` chi hien outline khi nguoi dung dieu huong bang ban phim. */
 .add-button:focus-visible,
 .delete-button:focus-visible,
 .filter-button:focus-visible {
@@ -81,6 +92,7 @@ main {
   outline-offset: 2px;
 }
 
+/* Codex note: Nut them task chinh, mau xanh trung voi mau tieu de app. */
 .add-button {
   padding: 12px 20px;
   border: none;
@@ -91,11 +103,13 @@ main {
   font-weight: 700;
 }
 
+/* Codex note: Doi mau hover rieng cho nut chinh va filter dang active. */
 .add-button:hover,
 .filter-button.active:hover {
   background-color: #052676;
 }
 
+/* Codex note: Khu thong ke total/active/completed duoc them de xem trang thai list nhanh. */
 .todo-summary {
   display: flex;
   justify-content: center;
@@ -105,6 +119,7 @@ main {
   font-size: 0.95rem;
 }
 
+/* Codex note: Nhom nut filter All/Active/Completed. */
 .filter-group {
   display: flex;
   justify-content: center;
@@ -112,6 +127,7 @@ main {
   margin-bottom: 14px;
 }
 
+/* Codex note: Style mac dinh cua tung nut filter. */
 .filter-button {
   padding: 8px 14px;
   border: 1px solid #b6c3d8;
@@ -121,17 +137,20 @@ main {
   cursor: pointer;
 }
 
+/* Codex note: Class `active` danh dau filter dang duoc chon. */
 .filter-button.active {
   border-color: #043096;
   background-color: #043096;
   color: #ffffff;
 }
 
+/* Codex note: Bo bullet/mac dinh cua ul de tu minh style todo item. */
 .task-list {
   padding: 0;
   list-style: none;
 }
 
+/* Codex note: Moi task la mot row flex gom checkbox, ten task va nut delete. */
 .task-list li {
   display: flex;
   align-items: center;
@@ -143,26 +162,31 @@ main {
   background-color: #ffffff;
 }
 
+/* Codex note: Tang kich thuoc checkbox mot chut de de click hon. */
 .task-list input[type="checkbox"] {
   width: 18px;
   height: 18px;
 }
 
+/* Codex note: `flex: 1` de ten task chiem phan con lai, day nut Delete sang ben phai. */
 .task-title {
   flex: 1;
   overflow-wrap: anywhere;
 }
 
+/* Codex note: Khi task completed, CSS gach ngang va lam mau chu nhe hon. */
 .task-title.completed {
   color: #6f7787;
   text-decoration: line-through;
 }
 
+/* Codex note: Empty state hien khi filter khong co task phu hop. */
 .empty-state {
   justify-content: center;
   color: #6f7787;
 }
 
+/* Codex note: Nut xoa dung mau do de phan biet voi hanh dong them/filter. */
 .delete-button {
   padding: 8px 12px;
   border: none;
@@ -172,10 +196,12 @@ main {
   cursor: pointer;
 }
 
+/* Codex note: Hover cua nut xoa dam hon de co phan hoi khi tro chuot. */
 .delete-button:hover {
   background-color: #b9251d;
 }
 
+/* Codex note: Responsive cho man hinh nho: form xep doc, card gon hon, cac cum thong tin tu xuong dong. */
 @media (max-width: 640px) {
   main {
     padding: 24px 12px;
