@@ -34,3 +34,27 @@
   color: white;
   cursor: pointer;
 }
+ul {
+  padding: 0;
+  list-style: none;
+}
+li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 20px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background-color: #ffffff;
+}
+li span {
+  flex: 1;
+}
+.delete-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #d73a31;
+  color: white;
+  cursor: pointer;
+}

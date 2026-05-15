@@ -16,6 +16,10 @@ function App() {
     );
   };
 
+  const deleteTask = (id) => {
+    setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
+  };
+
   const addTask = (event) => {
     event.preventDefault();
 
@@ -64,6 +68,14 @@ function App() {
               />
 
               <span>{task.title}</span>
+              <button
+                className="delete-button"
+                type="button"
+                onClick={() => deleteTask(task.id)}
+                aria-label={`Delete ${task.title}`}
+              >
+                Delete
+              </button>
             </li>
           ))}
         </ul>
