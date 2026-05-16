@@ -20,14 +20,46 @@
   box-sizing: border-box;
 }
 
-/* Codex note: Them style nen chung cho trang thay vi chi style rieng card todo. */
+/* Codex note: Nen tong the voi gradient va khong gian de glassmorphism noi bat. */
 body {
   margin: 0;
-  background-color: #f4f7fb;
-  color: #172033;
+  background:
+    radial-gradient(circle at 15% 20%, #9bc1ff 0%, transparent 40%),
+    radial-gradient(circle at 80% 10%, #78a8ff 0%, transparent 35%),
+    radial-gradient(circle at 70% 80%, #aecbff 0%, transparent 45%),
+    linear-gradient(135deg, #eaf1ff 0%, #f7f9ff 50%, #e8f0ff 100%);
+  color: var(--slate-700);
   font-family:
-    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
+    "Space Grotesk", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: auto;
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.55;
+  z-index: -1;
+}
+
+body::before {
+  top: 8%;
+  left: 6%;
+  background: radial-gradient(circle, rgba(79, 141, 255, 0.6), transparent 70%);
+}
+
+body::after {
+  bottom: 4%;
+  right: 8%;
+  background: radial-gradient(
+    circle,
+    rgba(45, 107, 211, 0.55),
+    transparent 70%
+  );
 }
 
 /* Codex note: Can giua app theo chieu ngang va tao khoang cach tren duoi cho moi man hinh. */
