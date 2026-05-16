@@ -180,25 +180,27 @@ main {
 .filter-group {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-bottom: 14px;
+  gap: 10px;
+  margin-bottom: 16px;
 }
 
 /* Codex note: Style mac dinh cua tung nut filter. */
 .filter-button {
-  padding: 8px 14px;
-  border: 1px solid #b6c3d8;
-  border-radius: 20px;
-  background-color: #ffffff;
-  color: #043096;
+  padding: 9px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--blue-700);
   cursor: pointer;
+  backdrop-filter: blur(8px);
 }
 
 /* Codex note: Class `active` danh dau filter dang duoc chon. */
 .filter-button.active {
-  border-color: #043096;
-  background-color: #043096;
+  border-color: transparent;
+  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
   color: #ffffff;
+  box-shadow: 0 10px 18px rgba(29, 79, 176, 0.18);
 }
 
 /* Codex note: Bo bullet/mac dinh cua ul de tu minh style todo item. */
@@ -211,12 +213,14 @@ main {
 .task-list li {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin: 12px 0;
-  padding: 12px 14px;
-  border: 1px solid #e4e9f2;
-  border-radius: 14px;
-  background-color: #ffffff;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+  background: var(--glass-strong);
+  box-shadow: 0 10px 18px rgba(20, 46, 92, 0.08);
+  backdrop-filter: blur(12px);
 }
 
 /* Codex note: Tang kich thuoc checkbox mot chut de de click hon. */
@@ -229,33 +233,36 @@ main {
 .task-title {
   flex: 1;
   overflow-wrap: anywhere;
+  font-weight: 600;
+  color: var(--blue-900);
 }
 
 /* Codex note: Khi task completed, CSS gach ngang va lam mau chu nhe hon. */
 .task-title.completed {
-  color: #6f7787;
+  color: #6c7a94;
   text-decoration: line-through;
 }
 
 /* Codex note: Empty state hien khi filter khong co task phu hop. */
 .empty-state {
   justify-content: center;
-  color: #6f7787;
+  color: #6c7a94;
 }
 
 /* Codex note: Nut xoa dung mau do de phan biet voi hanh dong them/filter. */
 .delete-button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 20px;
-  background-color: #d73a31;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #d74335 0%, #b92a1f 100%);
   color: white;
   cursor: pointer;
+  box-shadow: 0 8px 14px rgba(178, 40, 30, 0.18);
 }
 
 /* Codex note: Hover cua nut xoa dam hon de co phan hoi khi tro chuot. */
 .delete-button:hover {
-  background-color: #b9251d;
+  background: linear-gradient(135deg, #b92a1f 0%, #8f1d15 100%);
 }
 
 /* Codex note: Responsive cho man hinh nho: form xep doc, card gon hon, cac cum thong tin tu xuong dong. */
