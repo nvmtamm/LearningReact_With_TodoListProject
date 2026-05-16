@@ -82,16 +82,18 @@ main {
   -webkit-backdrop-filter: blur(18px);
 }
 
-/* Codex note: Nhom style heading rieng de tieu de gon va de can chinh hon. */
+/* Codex note: Tieu de dam chat glass, dung font serif lam diem nhan. */
 .app-header {
-  margin-bottom: 24px;
-  color: #043096;
+  margin-bottom: 28px;
+  color: var(--blue-800);
   text-align: center;
 }
 
 .app-header h1 {
   margin: 0;
-  font-size: 2rem;
+  font-family: "Fraunces", "Times New Roman", serif;
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  letter-spacing: 0.5px;
 }
 
 /* Codex note: Form dung flex de input va nut Add nam cung hang tren desktop. */
