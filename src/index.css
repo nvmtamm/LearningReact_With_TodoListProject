@@ -100,24 +100,26 @@ main {
 .todo-form {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-/* Codex note: Input dung `flex: 1` de tu gian theo chieu rong card. */
+/* Codex note: Input glass va vien sang de hop theme. */
 .input-box {
   flex: 1;
   min-width: 0;
-  padding: 12px 14px;
-  border: 1px solid #b6c3d8;
-  border-radius: 30px;
-  color: #172033;
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  color: var(--blue-900);
   font-size: 1rem;
+  box-shadow: inset 0 0 0 1px rgba(10, 28, 59, 0.08);
 }
 
 /* Codex note: Focus state giup thay ro dang nhap o input nao khi dung ban phim. */
 .input-box:focus {
-  border-color: #043096;
-  outline: 3px solid rgba(4, 48, 150, 0.15);
+  border-color: var(--blue-500);
+  outline: 3px solid rgba(79, 141, 255, 0.25);
 }
 
 /* Codex note: Gom transition cho cac nut de hover/focus muot va nhat quan. */
@@ -127,7 +129,8 @@ main {
   transition:
     background-color 160ms ease,
     border-color 160ms ease,
-    transform 160ms ease;
+    transform 160ms ease,
+    box-shadow 160ms ease;
 }
 
 /* Codex note: Hover day nut len nhe, tao cam giac co the click. */
@@ -145,30 +148,31 @@ main {
   outline-offset: 2px;
 }
 
-/* Codex note: Nut them task chinh, mau xanh trung voi mau tieu de app. */
+/* Codex note: Nut them task chinh, dung gradient xanh de hop glass theme. */
 .add-button {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 30px;
-  background-color: #043096;
+  padding: 12px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2d6bd3 0%, #4f8dff 100%);
   color: white;
   cursor: pointer;
   font-weight: 700;
+  box-shadow: 0 12px 22px rgba(29, 79, 176, 0.25);
 }
 
 /* Codex note: Doi mau hover rieng cho nut chinh va filter dang active. */
 .add-button:hover,
 .filter-button.active:hover {
-  background-color: #052676;
+  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
 }
 
 /* Codex note: Khu thong ke total/active/completed duoc them de xem trang thai list nhanh. */
 .todo-summary {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin: 18px 0 12px;
-  color: #2f3b52;
+  gap: 14px;
+  margin: 20px 0 14px;
+  color: var(--slate-700);
   font-size: 0.95rem;
 }
 
