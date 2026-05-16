@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Space+Grotesk:wght@400;600;700&display=swap");
+
+:root {
+  --blue-900: #0a1c3b;
+  --blue-800: #12315c;
+  --blue-700: #1b4a86;
+  --blue-600: #2d6bd3;
+  --blue-500: #4f8dff;
+  --ice-100: #f5f8ff;
+  --ice-200: #e9f0ff;
+  --slate-700: #31425f;
+  --glass: rgba(255, 255, 255, 0.18);
+  --glass-strong: rgba(255, 255, 255, 0.28);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --shadow: 0 28px 60px rgba(8, 18, 40, 0.25);
+}
+
 /* Codex note: Reset box model de padding/border khong lam phan tu bi tran kich thuoc. */
 * {
   box-sizing: border-box;
