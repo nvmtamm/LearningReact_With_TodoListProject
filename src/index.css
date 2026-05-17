@@ -257,10 +257,16 @@ main {
   backdrop-filter: blur(12px);
 }
 
+.task-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 24px rgba(20, 46, 92, 0.12);
+}
+
 /* Codex note: Tang kich thuoc checkbox mot chut de de click hon. */
 .task-list input[type="checkbox"] {
   width: 18px;
   height: 18px;
+  accent-color: var(--blue-600);
 }
 
 /* Codex note: `flex: 1` de ten task chiem phan con lai, day nut Delete sang ben phai. */
@@ -279,6 +285,8 @@ main {
 
 /* Codex note: Empty state hien khi filter khong co task phu hop. */
 .empty-state {
+  display: flex;
+  align-items: center;
   justify-content: center;
   color: #6c7a94;
 }
@@ -316,6 +324,11 @@ main {
 
   .todo-form {
     flex-direction: column;
+  }
+
+  .todo-summary span {
+    width: 100%;
+    text-align: center;
   }
 
   .add-button {
