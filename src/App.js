@@ -83,7 +83,11 @@ function App() {
     <main>
       <div className="app">
         <header className="app-header">
+          <span className="app-kicker">Focus board</span>
           <h1>Todo List React</h1>
+          <p className="app-subtitle">
+            Keep the list short, clear, and easy to scan.
+          </p>
         </header>
 
         {/* Codex note: Boc input va button trong form de ho tro submit bang phim Enter. */}
