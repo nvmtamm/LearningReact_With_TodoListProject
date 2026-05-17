@@ -113,6 +113,14 @@ main {
   letter-spacing: 0.5px;
 }
 
+.app-subtitle {
+  max-width: 32rem;
+  margin: 10px auto 0;
+  color: #5f6f8f;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
 /* Codex note: Form dung flex de input va nut Add nam cung hang tren desktop. */
 .todo-form {
   display: flex;
@@ -187,10 +195,19 @@ main {
 .todo-summary {
   display: flex;
   justify-content: center;
-  gap: 14px;
-  margin: 20px 0 14px;
+  gap: 10px;
+  margin: 18px 0 16px;
   color: var(--slate-700);
   font-size: 0.95rem;
+}
+
+.todo-summary span {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 14px rgba(20, 46, 92, 0.08);
+  backdrop-filter: blur(8px);
 }
 
 /* Codex note: Nhom nut filter All/Active/Completed. */
@@ -198,7 +215,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 /* Codex note: Style mac dinh cua tung nut filter. */
