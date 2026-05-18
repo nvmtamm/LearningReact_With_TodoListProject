@@ -1,57 +1,38 @@
 # React Todo List Learning Project
 
-## Overview
+## Giới thiệu
 
-This repository contains a small Todo List application built with React as a hands-on learning project.
+Đây là một project Todo List nhỏ được xây dựng bằng React để thực hành các khái niệm nền tảng của frontend hiện đại. Mục tiêu của project là tạo một ứng dụng đơn giản nhưng đủ đầy để luyện cách quản lý state, xử lý sự kiện, render danh sách và cập nhật giao diện theo dữ liệu.
 
-The app focuses on practicing React fundamentals through a simple but useful interface for managing tasks. Instead of pulling in extra libraries or splitting the code too early, the current version keeps the logic easy to follow inside a small codebase.
+Hiện tại toàn bộ logic chính vẫn nằm trong một component duy nhất là `src/App.js`, nên code dễ theo dõi và phù hợp cho việc học tập, thử nghiệm và mở rộng về sau.
 
-## Current Features
+## Những gì đã làm
 
-- Render a starter list of todo items
-- Add a new task from the input field
-- Toggle task completion with a checkbox
-- Delete tasks from the list
-- Filter tasks by All, Active, and Completed
-- Show total, active, and completed task counts
-- Keep the input controlled with React state
-- Update the UI immediately when state changes
-- Apply responsive custom styling with CSS
+Project hiện đã có các chức năng sau:
 
-## Tech Stack
+- Hiển thị danh sách task khởi tạo sẵn khi mở ứng dụng
+- Thêm task mới từ ô nhập liệu
+- Đánh dấu task đã hoàn thành bằng checkbox
+- Xóa task khỏi danh sách
+- Lọc task theo 3 trạng thái: All, Active, Completed
+- Hiển thị thống kê số lượng task tổng, task đang làm và task đã xong
+- Dùng controlled input để quản lý giá trị ô nhập bằng React state
+- Cập nhật giao diện ngay lập tức khi state thay đổi
+- Tạo giao diện riêng bằng CSS với phong cách glassmorphism và responsive
 
-- React
-- JavaScript (ES6+)
-- JSX
-- CSS
-- Create React App tooling
+## Cách hoạt động
 
-## Project Structure
+Luồng chính của ứng dụng nằm trong `src/App.js`.
 
-```text
-src/
-  App.js        Main Todo List component and application logic
-  index.js      React entry point
-  index.css     Global and component-level styling
-public/
-  ...           Static assets from Create React App
-README.md
-package.json
-```
+- `tasks` lưu toàn bộ danh sách task dạng mảng
+- `text` lưu giá trị đang nhập ở ô input
+- `filter` lưu trạng thái lọc hiện tại
+- `addTask()` tạo task mới và thêm vào cuối danh sách
+- `toggleComplete()` đổi trạng thái hoàn thành của một task
+- `deleteTask()` xóa task theo `id`
+- `visibleTasks` là danh sách được tính ra từ `tasks` dựa trên filter đang chọn
 
-## How It Works
-
-The application currently lives mainly inside `src/App.js`.
-
-- `tasks` state stores an array of todo objects
-- `text` state stores the current input value
-- `filter` state stores the active task filter
-- `addTask()` creates a new todo item and appends it to state
-- `toggleComplete()` flips the `completed` value for the selected task
-- `deleteTask()` removes a task by id
-- `visibleTasks` derives the list shown for the selected filter
-
-Each task object follows this shape:
+Mỗi task có cấu trúc như sau:
 
 ```js
 {
@@ -61,81 +42,95 @@ Each task object follows this shape:
 }
 ```
 
-## Getting Started
+Điểm đáng chú ý là phần thống kê và danh sách hiển thị đều được suy ra từ state hiện có, thay vì lưu thêm dữ liệu trùng lặp. Cách này giúp code đơn giản hơn và giảm nguy cơ đồng bộ sai dữ liệu.
 
-### 1. Install dependencies
+## Cấu trúc project
+
+```text
+src/
+  App.js        Component chính chứa logic Todo List
+  index.js      Điểm khởi chạy React
+  index.css     Style toàn cục và style giao diện
+public/
+  ...           Tài nguyên tĩnh do Create React App tạo sẵn
+README.md
+package.json
+```
+
+## Công nghệ sử dụng
+
+- React
+- JavaScript (ES6+)
+- JSX
+- CSS
+- Create React App
+
+## Cách chạy project
+
+### 1. Cài dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Start the development server
+### 2. Chạy môi trường dev
 
 ```bash
 npm start
 ```
 
-The app will run locally at `http://localhost:3000`.
+Ứng dụng sẽ chạy tại `http://localhost:3000`.
 
-## Available Scripts
+## Scripts có sẵn
 
 ```bash
 npm start
 ```
 
-Runs the app in development mode.
+Chạy ứng dụng ở chế độ development.
 
 ```bash
 npm test
 ```
 
-Launches the test runner.
+Mở test runner.
 
 ```bash
 npm run build
 ```
 
-Builds the app for production.
+Build ứng dụng cho production.
 
-## Learning Goals
+## Mục tiêu học tập
 
-This project is meant to reinforce core React concepts such as:
+Project này được dùng để luyện các khái niệm React cơ bản như:
 
 - Functional components
 - JSX
 - `useState`
 - Controlled inputs
 - Event handling
-- Rendering lists with `.map()`
-- Immutable state updates
-- Conditional UI behavior
-- Derived UI state from existing state
-- Small, incremental feature commits
+- Render list bằng `.map()`
+- Cập nhật state theo kiểu immutable
+- Conditional rendering
+- Derived state từ dữ liệu có sẵn
+- Tổ chức thay đổi theo từng bước nhỏ
 
-## Small Development Plan
+## Hạn chế hiện tại
 
-The current GitHub update is split into four small contributions:
+- Tất cả logic vẫn nằm trong một component
+- Dữ liệu task chưa được lưu lại sau khi refresh
+- Chưa có tính năng sửa task
+- Chưa có test tự động cho luồng tương tác người dùng
 
-1. Refactor the todo form and state naming for readability
-2. Add task deletion
-3. Add filters and task counts
-4. Improve responsive styling and documentation
+## Hướng phát triển tiếp theo
 
-## Current Limitations
+- Tách UI thành các component nhỏ hơn
+- Thêm chức năng sửa task
+- Lưu dữ liệu bằng localStorage
+- Thêm test cho các thao tác chính
+- Cải thiện accessibility bằng keyboard navigation tốt hơn
 
-- All main logic is still inside a single component
-- Tasks are not persisted after refresh
-- There is no edit feature yet
-- There are no automated interaction tests yet
+## Kết luận
 
-## Possible Next Steps
-
-- Split the UI into smaller reusable components
-- Add edit actions
-- Persist tasks with local storage
-- Add basic automated tests for interactions
-- Add keyboard-focused accessibility polish
-
-## Purpose
-
-The main purpose of this repository is learning by building. It is a straightforward project for understanding how React state and UI updates work in practice before moving to larger application patterns.
+Tóm lại, project hiện tại là một bài tập React hoàn chỉnh ở mức cơ bản: có form nhập liệu, state management, thao tác trên danh sách, filter, thống kê và giao diện tùy biến. Đây là nền tảng tốt để tiếp tục nâng cấp thành một ứng dụng Todo List có cấu trúc rõ ràng hơn trong các bước tiếp theo.
