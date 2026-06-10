@@ -247,6 +247,23 @@ main {
   box-shadow: none;
 }
 
+.toggle-all-button {
+  padding: 10px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 8px 14px rgba(29, 79, 176, 0.18);
+  margin-right: 10px;
+}
+
+.toggle-all-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+  box-shadow: none;
+}
+
 /* Codex note: Nhom nut filter All/Active/Completed. */
 .filter-group {
   display: flex;

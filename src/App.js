@@ -40,6 +40,7 @@ function App() {
 
   const activeCount = tasks.filter((task) => !task.completed).length;
   const completedCount = tasks.length - activeCount;
+  const allCompleted = tasks.length > 0 && activeCount === 0;
 
   const visibleTasks = tasks.filter((task) => {
     const matchesSearch = task.title
@@ -66,6 +67,17 @@ function App() {
 
   const clearCompleted = () => {
     setTasks((prevTasks) => prevTasks.filter((task) => !task.completed));
+  };
+
+  const toggleAllTasks = () => {
+    setTasks((prevTasks) => {
+      const shouldMarkComplete = prevTasks.some((task) => !task.completed);
+
+      return prevTasks.map((task) => ({
+        ...task,
+        completed: shouldMarkComplete,
+      }));
+    });
   };
 
   const startEdit = (task) => {
@@ -149,6 +161,15 @@ function App() {
         </div>
 
         <div className="action-row">
+          <button
+            className="toggle-all-button"
+            type="button"
+            onClick={toggleAllTasks}
+            disabled={tasks.length === 0}
+          >
+            {allCompleted ? "Mark all active" : "Mark all completed"}
+          </button>
+
           <button
             className="clear-button"
             type="button"
