@@ -149,6 +149,9 @@ main {
 
 /* Codex note: Gom transition cho cac nut de hover/focus muot va nhat quan. */
 .add-button,
+.edit-button,
+.save-button,
+.cancel-button,
 .delete-button,
 .filter-button {
   transition:
@@ -160,6 +163,9 @@ main {
 
 /* Codex note: Hover day nut len nhe, tao cam giac co the click. */
 .add-button:hover,
+.edit-button:hover,
+.save-button:hover,
+.cancel-button:hover,
 .delete-button:hover,
 .filter-button:hover {
   transform: translateY(-1px);
@@ -167,6 +173,9 @@ main {
 
 /* Codex note: `focus-visible` chi hien outline khi nguoi dung dieu huong bang ban phim. */
 .add-button:focus-visible,
+.edit-button:focus-visible,
+.save-button:focus-visible,
+.cancel-button:focus-visible,
 .delete-button:focus-visible,
 .filter-button:focus-visible {
   outline: 3px solid rgba(4, 48, 150, 0.2);
@@ -292,14 +301,53 @@ main {
 }
 
 /* Codex note: Nut xoa dung mau do de phan biet voi hanh dong them/filter. */
+.edit-button,
+.save-button,
+.cancel-button,
 .delete-button {
   padding: 8px 14px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 999px;
-  background: linear-gradient(135deg, #d74335 0%, #b92a1f 100%);
   color: white;
   cursor: pointer;
+}
+
+.edit-button {
+  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
+  box-shadow: 0 8px 14px rgba(29, 79, 176, 0.18);
+}
+
+.save-button {
+  background: linear-gradient(135deg, #2d6bd3 0%, #4f8dff 100%);
+  box-shadow: 0 8px 14px rgba(29, 79, 176, 0.18);
+}
+
+.cancel-button {
+  background: linear-gradient(135deg, #6c7a94 0%, #8e9bb2 100%);
+  box-shadow: 0 8px 14px rgba(110, 126, 154, 0.18);
+}
+
+.delete-button {
+  background: linear-gradient(135deg, #d74335 0%, #b92a1f 100%);
   box-shadow: 0 8px 14px rgba(178, 40, 30, 0.18);
+}
+
+/* Codex note: Input edit dung chung nen giao dien voi input them task de dong bo visual style. */
+.edit-input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  color: var(--blue-900);
+  font-size: 0.98rem;
+  box-shadow: inset 0 0 0 1px rgba(10, 28, 59, 0.06);
+}
+
+.edit-input:focus {
+  border-color: var(--blue-500);
+  outline: 3px solid rgba(79, 141, 255, 0.25);
 }
 
 /* Codex note: Hover cua nut xoa dam hon de co phan hoi khi tro chuot. */
@@ -342,8 +390,17 @@ main {
 
   .task-list li {
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
+  .edit-input {
+    width: 100%;
+    order: 1;
+  }
+
+  .edit-button,
+  .save-button,
+  .cancel-button,
   .delete-button {
     align-self: center;
   }
