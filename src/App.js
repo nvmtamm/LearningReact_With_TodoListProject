@@ -64,6 +64,10 @@ function App() {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
   };
 
+  const clearCompleted = () => {
+    setTasks((prevTasks) => prevTasks.filter((task) => !task.completed));
+  };
+
   const startEdit = (task) => {
     setEditingId(task.id);
     setEditingText(task.title);
@@ -142,6 +146,17 @@ function App() {
           <span>{tasks.length} total</span>
           <span>{activeCount} active</span>
           <span>{completedCount} completed</span>
+        </div>
+
+        <div className="action-row">
+          <button
+            className="clear-button"
+            type="button"
+            onClick={clearCompleted}
+            disabled={completedCount === 0}
+          >
+            Clear completed
+          </button>
         </div>
 
         <div className="filter-group" aria-label="Task filters">
