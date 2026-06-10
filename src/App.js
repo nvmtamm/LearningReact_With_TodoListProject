@@ -1,11 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [tasks, setTasks] = useState([
+  const defaultTasks = [
     { id: 1, title: "Learn React", completed: false },
     { id: 2, title: "Build a Todo App", completed: true },
     { id: 3, title: "Master React Hooks", completed: false },
-  ]);
+  ];
+
+  const [tasks, setTasks] = useState(() => {
+    const savedTasks = localStorage.getItem("todo-tasks");
+
+    if (!savedTasks) return defaultTasks;
+
+    try {
+      const parsedTasks = JSON.parse(savedTasks);
+
+      return Array.isArray(parsedTasks) ? parsedTasks : defaultTasks;
+    } catch {
+      return defaultTasks;
+    }
+  });
 
   const [text, setText] = useState("");
 
@@ -18,6 +32,10 @@ function App() {
     { value: "active", label: "Active" },
     { value: "completed", label: "Completed" },
   ];
+
+  useEffect(() => {
+    localStorage.setItem("todo-tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   const activeCount = tasks.filter((task) => !task.completed).length;
   const completedCount = tasks.length - activeCount;
