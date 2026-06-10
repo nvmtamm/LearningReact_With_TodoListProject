@@ -141,6 +141,12 @@ main {
   box-shadow: inset 0 0 0 1px rgba(10, 28, 59, 0.08);
 }
 
+/* Codex note: O search dung chung visual style voi input chinh de khong bi lech theme. */
+.search-box {
+  width: 100%;
+  margin-top: 14px;
+}
+
 /* Codex note: Focus state giup thay ro dang nhap o input nao khi dung ban phim. */
 .input-box:focus {
   border-color: var(--blue-500);

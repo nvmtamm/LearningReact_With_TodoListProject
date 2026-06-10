@@ -22,6 +22,7 @@ function App() {
   });
 
   const [text, setText] = useState("");
+  const [searchText, setSearchText] = useState("");
 
   const [filter, setFilter] = useState("all");
   const [editingId, setEditingId] = useState(null);
@@ -41,10 +42,14 @@ function App() {
   const completedCount = tasks.length - activeCount;
 
   const visibleTasks = tasks.filter((task) => {
+    const matchesSearch = task.title
+      .toLowerCase()
+      .includes(searchText.trim().toLowerCase());
+
     if (filter === "active") return !task.completed;
     if (filter === "completed") return task.completed;
 
-    return true;
+    return matchesSearch;
   });
 
   const toggleComplete = (id) => {
@@ -124,6 +129,14 @@ function App() {
             Add Task
           </button>
         </form>
+
+        <input
+          className="search-box"
+          value={searchText}
+          onChange={(event) => setSearchText(event.target.value)}
+          placeholder="Search tasks..."
+          aria-label="Search tasks"
+        />
 
         <div className="todo-summary" aria-live="polite">
           <span>{tasks.length} total</span>
