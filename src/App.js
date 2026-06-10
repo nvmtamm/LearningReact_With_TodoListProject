@@ -22,6 +22,7 @@ function App() {
   });
 
   const [text, setText] = useState("");
+  const [dueDate, setDueDate] = useState("");
   const [searchText, setSearchText] = useState("");
 
   const [filter, setFilter] = useState("all");
@@ -115,12 +116,14 @@ function App() {
     const newTask = {
       id: Date.now(),
       title: taskTitle,
+      dueDate,
       completed: false,
     };
 
     setTasks((prevTasks) => [...prevTasks, newTask]);
 
     setText("");
+    setDueDate("");
   };
 
   return (
@@ -140,6 +143,13 @@ function App() {
             value={text}
             onChange={(event) => setText(event.target.value)}
             placeholder="Add a new task..."
+          />
+          <input
+            className="date-box"
+            type="date"
+            value={dueDate}
+            onChange={(event) => setDueDate(event.target.value)}
+            aria-label="Due date"
           />
           <button className="add-button" type="submit">
             Add Task
@@ -234,13 +244,18 @@ function App() {
                   </>
                 ) : (
                   <>
-                    <span
-                      className={`task-title ${
-                        task.completed ? "completed" : ""
-                      }`}
-                    >
-                      {task.title}
-                    </span>
+                    <div className="task-content">
+                      <span
+                        className={`task-title ${
+                          task.completed ? "completed" : ""
+                        }`}
+                      >
+                        {task.title}
+                      </span>
+                      {task.dueDate ? (
+                        <span className="task-due-date">Due: {task.dueDate}</span>
+                      ) : null}
+                    </div>
                     <button
                       className="edit-button"
                       type="button"
