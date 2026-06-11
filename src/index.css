@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Space+Grotesk:wght@400;600;700&display=swap");
 
 :root {
-  --blue-900: #0a1c3b;
-  --blue-800: #12315c;
-  --blue-700: #1b4a86;
+  --blue-900: #071233;
+  --blue-800: #0c2b57;
+  --blue-700: #154a8a;
   --blue-600: #2d6bd3;
   --blue-500: #4f8dff;
   --ice-100: #f5f8ff;
   --ice-200: #e9f0ff;
-  --slate-700: #31425f;
-  --glass: rgba(255, 255, 255, 0.18);
-  --glass-strong: rgba(255, 255, 255, 0.28);
-  --glass-border: rgba(255, 255, 255, 0.35);
-  --shadow: 0 28px 60px rgba(8, 18, 40, 0.25);
+  --slate-700: #2d3e5a;
+  --glass: rgba(255, 255, 255, 0.14);
+  --glass-strong: rgba(255, 255, 255, 0.22);
+  --glass-border: rgba(255, 255, 255, 0.32);
+  --shadow: 0 28px 60px rgba(6, 18, 40, 0.22);
 }
 
 /* Codex note: Reset box model de padding/border khong lam phan tu bi tran kich thuoc. */
@@ -24,10 +24,10 @@
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 15% 20%, #9bc1ff 0%, transparent 40%),
-    radial-gradient(circle at 80% 10%, #78a8ff 0%, transparent 35%),
-    radial-gradient(circle at 70% 80%, #aecbff 0%, transparent 45%),
-    linear-gradient(135deg, #eaf1ff 0%, #f7f9ff 50%, #e8f0ff 100%);
+    radial-gradient(circle at 15% 20%, #a8d2ff 0%, transparent 40%),
+    radial-gradient(circle at 80% 10%, #89b8ff 0%, transparent 35%),
+    radial-gradient(circle at 70% 80%, #c6deff 0%, transparent 45%),
+    linear-gradient(135deg, #eaf4ff 0%, #f7fbff 50%, #eaf4ff 100%);
   color: var(--slate-700);
   font-family:
     "Space Grotesk", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
@@ -160,8 +160,8 @@ main {
 
 /* Codex note: Focus state giup thay ro dang nhap o input nao khi dung ban phim. */
 .input-box:focus {
-  border-color: var(--blue-500);
-  outline: 3px solid rgba(79, 141, 255, 0.25);
+  border-color: var(--blue-600);
+  outline: 3px solid rgba(47, 107, 211, 0.18);
 }
 
 /* Codex note: Gom transition cho cac nut de hover/focus muot va nhat quan. */
@@ -204,17 +204,17 @@ main {
   padding: 12px 22px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 999px;
-  background: linear-gradient(135deg, #2d6bd3 0%, #4f8dff 100%);
+  background: linear-gradient(135deg, #1b63d6 0%, #4f8dff 100%);
   color: white;
   cursor: pointer;
   font-weight: 700;
-  box-shadow: 0 12px 22px rgba(29, 79, 176, 0.25);
+  box-shadow: 0 12px 26px rgba(29, 79, 176, 0.22);
 }
 
 /* Codex note: Doi mau hover rieng cho nut chinh va filter dang active. */
 .add-button:hover,
 .filter-button.active:hover {
-  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
+  background: linear-gradient(135deg, #143f7a 0%, #1b63d6 100%);
 }
 
 /* Codex note: Khu thong ke total/active/completed duoc them de xem trang thai list nhanh. */
@@ -229,10 +229,10 @@ main {
 
 .todo-summary span {
   padding: 8px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 14px rgba(20, 46, 92, 0.08);
+  background: rgba(255, 255, 255, 0.36);
+  box-shadow: 0 8px 14px rgba(16, 40, 90, 0.07);
   backdrop-filter: blur(8px);
 }
 
@@ -244,9 +244,9 @@ main {
 
 .clear-button {
   padding: 10px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 999px;
-  background: linear-gradient(135deg, #6c7a94 0%, #8e9bb2 100%);
+  background: linear-gradient(135deg, #4f79b8 0%, #6b8ee0 100%);
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0 8px 14px rgba(110, 126, 154, 0.18);
@@ -262,7 +262,7 @@ main {
   padding: 10px 16px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 999px;
-  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
+  background: linear-gradient(135deg, #154a8a 0%, #2d6bd3 100%);
   color: #ffffff;
   cursor: pointer;
   box-shadow: 0 8px 14px rgba(29, 79, 176, 0.18);
@@ -288,7 +288,7 @@ main {
   padding: 9px 16px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.36);
   color: var(--blue-700);
   cursor: pointer;
   backdrop-filter: blur(8px);
@@ -297,9 +297,9 @@ main {
 /* Codex note: Class `active` danh dau filter dang duoc chon. */
 .filter-button.active {
   border-color: transparent;
-  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
+  background: linear-gradient(135deg, #154a8a 0%, #2d6bd3 100%);
   color: #ffffff;
-  box-shadow: 0 10px 18px rgba(29, 79, 176, 0.18);
+  box-shadow: 0 10px 18px rgba(29, 79, 176, 0.16);
 }
 
 /* Codex note: Bo bullet/mac dinh cua ul de tu minh style todo item. */
@@ -356,7 +356,7 @@ main {
 
 /* Codex note: Khi task completed, CSS gach ngang va lam mau chu nhe hon. */
 .task-title.completed {
-  color: #6c7a94;
+  color: #6c82a8;
   text-decoration: line-through;
 }
 
@@ -374,30 +374,30 @@ main {
 .cancel-button,
 .delete-button {
   padding: 8px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.28);
   border-radius: 999px;
   color: white;
   cursor: pointer;
 }
 
 .edit-button {
-  background: linear-gradient(135deg, #1b4a86 0%, #2d6bd3 100%);
-  box-shadow: 0 8px 14px rgba(29, 79, 176, 0.18);
+  background: linear-gradient(135deg, #154a8a 0%, #2d6bd3 100%);
+  box-shadow: 0 8px 14px rgba(21, 74, 138, 0.14);
 }
 
 .save-button {
-  background: linear-gradient(135deg, #2d6bd3 0%, #4f8dff 100%);
-  box-shadow: 0 8px 14px rgba(29, 79, 176, 0.18);
+  background: linear-gradient(135deg, #1b63d6 0%, #4f8dff 100%);
+  box-shadow: 0 8px 14px rgba(29, 79, 176, 0.14);
 }
 
 .cancel-button {
-  background: linear-gradient(135deg, #6c7a94 0%, #8e9bb2 100%);
-  box-shadow: 0 8px 14px rgba(110, 126, 154, 0.18);
+  background: linear-gradient(135deg, #6b86b6 0%, #8ea6dd 100%);
+  box-shadow: 0 8px 14px rgba(60, 86, 140, 0.12);
 }
 
 .delete-button {
-  background: linear-gradient(135deg, #d74335 0%, #b92a1f 100%);
-  box-shadow: 0 8px 14px rgba(178, 40, 30, 0.18);
+  background: linear-gradient(135deg, #2a3f7a 0%, #17305a 100%);
+  box-shadow: 0 8px 14px rgba(15, 30, 70, 0.14);
 }
 
 /* Codex note: Input edit dung chung nen giao dien voi input them task de dong bo visual style. */
